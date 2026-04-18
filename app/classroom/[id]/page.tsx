@@ -48,7 +48,12 @@ export default function ClassroomDetailPage() {
           useStageStore.getState().setStage(data.stage);
           useStageStore.setState({
             scenes: data.scenes,
-            currentSceneId: data.scenes[0]?.id ?? null,
+            // We explicitly set the first scene ID to trigger the render
+            currentSceneId: data.scenes[0]?.id || data.scenes[0]?.content?.canvas?.id,
+            // CRITICAL: This removes the "Loading..." overlay
+            status: 'success', 
+            // Ensure agents are loaded so they can "speak" the actions
+            agents: data.agents || []
           });
           
           log.info('Successfully loaded lesson1.json');
