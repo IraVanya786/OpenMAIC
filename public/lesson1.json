@@ -1,0 +1,2462 @@
+{
+  "formatVersion": 1,
+  "exportedAt": "2026-04-17T13:08:05.902Z",
+  "appVersion": "0.0.0",
+  "stage": {
+    "name": "explain photosynthesis",
+    "description": "",
+    "language": "The course will be taught entirely in English. Scientific terminology such as 'chloroplast', 'stomata', and 'photolysis' should be clearly defined in English when first introduced. The tone should be engaging and accessible for general learners, using clear analogies to explain complex biochemical processes.",
+    "style": "professional",
+    "createdAt": 1776421089818,
+    "updatedAt": 1776421089818
+  },
+  "agents": [
+    {
+      "name": "Sophie",
+      "role": "assistant",
+      "persona": "Sophie is an organized assistant who specializes in clarifying complex scientific terminology like 'photolysis' and 'chlorophyll'. She guides students through interactive experiments and ensures they understand how the plant's factory operates at a molecular level.",
+      "avatar": "/avatars/assist.png",
+      "color": "#06b6d4",
+      "priority": 7
+    },
+    {
+      "name": "Dr. Bloom",
+      "role": "teacher",
+      "persona": "Dr. Bloom is a passionate biologist who uses vivid analogies to make the 'magic' of photosynthesis accessible to everyone. He focuses on the big picture of how plants transform sunlight into the energy that sustains life on Earth.",
+      "avatar": "/avatars/teacher.png",
+      "color": "#10b981",
+      "priority": 10
+    },
+    {
+      "name": "Maya",
+      "role": "student",
+      "persona": "Maya is an energetic and curious student who loves asking about the real-world impact of science. She is always eager to participate in simulations and find out exactly how raw ingredients become food for the plant.",
+      "avatar": "/avatars/clown.png",
+      "color": "#f97316",
+      "priority": 6
+    },
+    {
+      "name": "Felix",
+      "role": "student",
+      "persona": "Felix is a studious and thoughtful learner who likes to take meticulous notes on the stages of the Calvin Cycle. He appreciates clear summaries and is always ready for a knowledge check to ensure he has mastered the material.",
+      "avatar": "/avatars/note-taker.png",
+      "color": "#8b5cf6",
+      "priority": 4
+    }
+  ],
+  "scenes": [
+    {
+      "type": "slide",
+      "title": "What is Photosynthesis?",
+      "order": 1,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "hTaTGc012WBDuPstmoT7-",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "theme": {
+            "backgroundColor": "#ffffff",
+            "themeColors": [
+              "#5b9bd5",
+              "#ed7d31",
+              "#a5a5a5",
+              "#ffc000",
+              "#4472c4"
+            ],
+            "fontColor": "#333333",
+            "fontName": "Microsoft YaHei",
+            "outline": {
+              "color": "#d14424",
+              "width": 2,
+              "style": "solid"
+            },
+            "shadow": {
+              "h": 0,
+              "v": 0,
+              "blur": 10,
+              "color": "#000000"
+            }
+          },
+          "elements": [
+            {
+              "id": "text_ptpuZCkF",
+              "type": "text",
+              "left": 60,
+              "top": 50,
+              "width": 880,
+              "height": 70,
+              "content": "<p style=\"font-size: 32px; color: #2e7d32;\"><strong>What is Photosynthesis?</strong></p>",
+              "defaultFontName": "Microsoft YaHei",
+              "defaultColor": "#333333",
+              "rotate": 0
+            },
+            {
+              "id": "shape_DNno4m_G",
+              "type": "shape",
+              "left": 70,
+              "top": 125,
+              "width": 380,
+              "height": 4,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#81c784",
+              "fixedRatio": false,
+              "rotate": 0
+            },
+            {
+              "id": "shape_nSmUuRs7",
+              "type": "shape",
+              "left": 60,
+              "top": 150,
+              "width": 420,
+              "height": 130,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f1f8e9",
+              "fixedRatio": false,
+              "rotate": 0
+            },
+            {
+              "id": "text_xgFJLLcN",
+              "type": "text",
+              "left": 80,
+              "top": 164,
+              "width": 380,
+              "height": 103,
+              "content": "<p style=\"font-size: 18px;\"><strong>Nature's Solar Panel:</strong> The process where plants transform sunlight into chemical energy (glucose).</p>",
+              "defaultFontName": "Microsoft YaHei",
+              "defaultColor": "#333333",
+              "rotate": 0
+            },
+            {
+              "id": "text_Fj0FibaQ",
+              "type": "text",
+              "left": 60,
+              "top": 295,
+              "width": 420,
+              "height": 49,
+              "content": "<p style=\"font-size: 18px; color: #2e7d32;\"><strong>The Basic Recipe:</strong></p>",
+              "defaultFontName": "Microsoft YaHei",
+              "defaultColor": "#333333",
+              "rotate": 0
+            },
+            {
+              "id": "latex_jH9SBOLl",
+              "type": "latex",
+              "left": 60,
+              "top": 340,
+              "width": 420,
+              "height": 60,
+              "latex": "\\text{Sunlight} + 6H_2O + 6CO_2 \\rightarrow C_6H_{12}O_6 + 6O_2",
+              "color": "#1b5e20",
+              "align": "left",
+              "html": "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord text\"><span class=\"mord\">Sunlight</span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8333em;vertical-align:-0.15em;\"></span><span class=\"mord\">6</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.08125em;\">H</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0813em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">O</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8333em;vertical-align:-0.15em;\"></span><span class=\"mord\">6</span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">O</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0278em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0715em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">6</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.08125em;\">H</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0813em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">12</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">O</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0278em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">6</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8333em;vertical-align:-0.15em;\"></span><span class=\"mord\">6</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">O</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0278em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span></span>",
+              "fixedRatio": true,
+              "rotate": 0
+            },
+            {
+              "id": "image_pob-pj5T",
+              "type": "image",
+              "left": 520,
+              "top": 150,
+              "width": 420,
+              "height": 236,
+              "src": "gen_img_VhwWN1QO",
+              "fixedRatio": true,
+              "rotate": 0
+            },
+            {
+              "id": "text_sEpTs-Jn",
+              "type": "text",
+              "left": 60,
+              "top": 415,
+              "width": 880,
+              "height": 103,
+              "content": "<p style=\"font-size: 18px;\">• <strong>Energy Foundation:</strong> Provides the primary food source for almost all life on Earth.</p><p style=\"font-size: 18px;\">• <strong>Atmospheric Vitality:</strong> Produces the oxygen required by nearly every living organism.</p>",
+              "defaultFontName": "Microsoft YaHei",
+              "defaultColor": "#333333",
+              "rotate": 0
+            }
+          ],
+          "background": {
+            "type": "solid",
+            "color": "#ffffff"
+          }
+        }
+      },
+      "actions": [
+        {
+          "id": "action_V-2U52lI",
+          "type": "spotlight",
+          "elementId": "text_ptpuZCkF"
+        },
+        {
+          "id": "action_1ENpuSu8",
+          "type": "speech",
+          "text": "Hello everyone! I'm Dr. Bloom, and I am absolutely thrilled to start our journey today into one of the most magical processes in nature: Photosynthesis. We are going to explore how plants literally pull energy out of the sky to fuel life on Earth.",
+          "audioRef": "audio/tts_action_1ENpuSu8.mp3"
+        },
+        {
+          "id": "action_p-DQ8AX-",
+          "type": "spotlight",
+          "elementId": "text_xgFJLLcN"
+        },
+        {
+          "id": "action_mDTcD0cG",
+          "type": "speech",
+          "text": "I like to think of every green leaf as nature's solar panel. Through photosynthesis, plants trap light energy and transform it into chemical energy, creating a sustainable power source for themselves and, ultimately, for us.",
+          "audioRef": "audio/tts_action_mDTcD0cG.mp3"
+        },
+        {
+          "id": "action_JlG4uIuL",
+          "type": "laser",
+          "elementId": "image_pob-pj5T"
+        },
+        {
+          "id": "action_pNV6DNqU",
+          "type": "speech",
+          "text": "As you can see in this illustration, it's a dynamic interaction between the plant and its environment. It's not just growing; it's actively manufacturing.",
+          "audioRef": "audio/tts_action_pNV6DNqU.mp3"
+        },
+        {
+          "id": "action_VUbwiPss",
+          "type": "spotlight",
+          "elementId": "latex_jH9SBOLl"
+        },
+        {
+          "id": "action_uBYeg9Gq",
+          "type": "speech",
+          "text": "Here is the 'Basic Recipe' for this process. By combining sunlight, water, and carbon dioxide, the plant produces glucose—a form of sugar that serves as food—and releases oxygen as a vital byproduct.",
+          "audioRef": "audio/tts_action_uBYeg9Gq.mp3"
+        },
+        {
+          "id": "action_EzoutP7x",
+          "type": "spotlight",
+          "elementId": "text_sEpTs-Jn"
+        },
+        {
+          "id": "action_fE_Hn1PA",
+          "type": "speech",
+          "text": "This is the foundation of our entire energy system. Without this process, there would be no primary food source for animals and no oxygen for us to breathe. It truly is the engine of life. Now, let's think about the scale of this.",
+          "audioRef": "audio/tts_action_fE_Hn1PA.mp3"
+        },
+        {
+          "id": "action_a8zcPVvh",
+          "type": "discussion",
+          "topic": "The Impact of Photosynthesis",
+          "prompt": "Maya, considering how much we rely on oxygen and food, what do you think would be the most immediate challenge for humans if plants were no longer able to capture solar energy?",
+          "agentId": "gen-F5Os52Il"
+        }
+      ]
+    },
+    {
+      "type": "slide",
+      "title": "The Raw Ingredients",
+      "order": 2,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "XHX5IoRUjBgh98xJxoiwe",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "theme": {
+            "backgroundColor": "#ffffff",
+            "themeColors": [
+              "#5b9bd5",
+              "#ed7d31",
+              "#a5a5a5",
+              "#ffc000",
+              "#4472c4"
+            ],
+            "fontColor": "#333333",
+            "fontName": "Microsoft YaHei",
+            "outline": {
+              "color": "#d14424",
+              "width": 2,
+              "style": "solid"
+            },
+            "shadow": {
+              "h": 0,
+              "v": 0,
+              "blur": 10,
+              "color": "#000000"
+            }
+          },
+          "elements": [
+            {
+              "id": "text_AduZe95M",
+              "type": "text",
+              "left": 60,
+              "top": 50,
+              "width": 880,
+              "height": 70,
+              "content": "<p style=\"font-size: 32px; color: #1a5d1a;\"><strong>The Raw Ingredients</strong></p>",
+              "defaultFontName": "Microsoft YaHei",
+              "defaultColor": "#333333",
+              "rotate": 0
+            },
+            {
+              "id": "shape_uVsMfhcR",
+              "type": "shape",
+              "left": 70,
+              "top": 120,
+              "width": 320,
+              "height": 3,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#4caf50",
+              "fixedRatio": false,
+              "rotate": 0
+            },
+            {
+              "id": "image_8TwhJRSw",
+              "type": "image",
+              "left": 530,
+              "top": 140,
+              "width": 410,
+              "height": 231,
+              "src": "gen_img_KihYjHNE",
+              "fixedRatio": true,
+              "rotate": 0
+            },
+            {
+              "id": "text_QAyFgy1-",
+              "type": "text",
+              "left": 60,
+              "top": 140,
+              "width": 450,
+              "height": 232,
+              "content": "<p style=\"font-size: 18px;\"><strong>• Sunlight</strong></p><p style=\"font-size: 16px; color: #666;\">Captured by leaf pigments like tiny solar panels to power the reaction.</p><p style=\"font-size: 18px;\"><strong>• Water</strong></p><p style=\"font-size: 16px; color: #666;\">Drawn up from the soil by roots and transported through the plant.</p><p style=\"font-size: 18px;\"><strong>• Carbon Dioxide</strong></p><p style=\"font-size: 16px; color: #666;\">Absorbed from the air through microscopic leaf pores called <em>stomata</em>.</p>",
+              "defaultFontName": "Microsoft YaHei",
+              "defaultColor": "#333333",
+              "rotate": 0
+            },
+            {
+              "id": "table_rfNAjEx6",
+              "type": "table",
+              "left": 100,
+              "top": 390,
+              "width": 800,
+              "height": 140,
+              "colWidths": [
+                0.5,
+                0.5
+              ],
+              "data": [
+                [
+                  {
+                    "id": "h1",
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "text": "Ingredient",
+                    "style": {
+                      "bold": true,
+                      "backcolor": "#edf7ed",
+                      "align": "center"
+                    }
+                  },
+                  {
+                    "id": "h2",
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "text": "Primary Source",
+                    "style": {
+                      "bold": true,
+                      "backcolor": "#edf7ed",
+                      "align": "center"
+                    }
+                  }
+                ],
+                [
+                  {
+                    "id": "r1c1",
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "text": "Sunlight",
+                    "style": {
+                      "align": "center"
+                    }
+                  },
+                  {
+                    "id": "r1c2",
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "text": "The Sun (Solar Energy)",
+                    "style": {
+                      "align": "center"
+                    }
+                  }
+                ],
+                [
+                  {
+                    "id": "r2c1",
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "text": "Water",
+                    "style": {
+                      "align": "center"
+                    }
+                  },
+                  {
+                    "id": "r2c2",
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "text": "The Soil (Root Absorption)",
+                    "style": {
+                      "align": "center"
+                    }
+                  }
+                ],
+                [
+                  {
+                    "id": "r3c1",
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "text": "Carbon Dioxide",
+                    "style": {
+                      "align": "center"
+                    }
+                  },
+                  {
+                    "id": "r3c2",
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "text": "The Atmosphere (Air)",
+                    "style": {
+                      "align": "center"
+                    }
+                  }
+                ]
+              ],
+              "outline": {
+                "width": 1,
+                "style": "solid",
+                "color": "#e0e0e0"
+              },
+              "rotate": 0
+            }
+          ],
+          "background": {
+            "type": "solid",
+            "color": "#ffffff"
+          }
+        }
+      },
+      "actions": [
+        {
+          "id": "action_lyeOfv4p",
+          "type": "spotlight",
+          "elementId": "text_AduZe95M"
+        },
+        {
+          "id": "action_w1juum-r",
+          "type": "speech",
+          "text": "To understand how this 'engine of life' works, we first need to look at what's fueling it. Just like a chef needs specific ingredients to bake a cake, a plant requires three essential raw materials to kickstart photosynthesis.",
+          "audioRef": "audio/tts_action_w1juum-r.mp3"
+        },
+        {
+          "id": "action_kXn8UYDS",
+          "type": "spotlight",
+          "elementId": "image_8TwhJRSw"
+        },
+        {
+          "id": "action_w1r99qhm",
+          "type": "speech",
+          "text": "As you can see in this diagram, the process is a beautiful collaboration between the plant and its environment, drawing resources from the sky, the soil, and the air around it.",
+          "audioRef": "audio/tts_action_w1r99qhm.mp3"
+        },
+        {
+          "id": "action_BaNt5Wh5",
+          "type": "spotlight",
+          "elementId": "text_QAyFgy1-"
+        },
+        {
+          "id": "action_fnIzshcd",
+          "type": "speech",
+          "text": "First, we have sunlight, which is captured by specialized leaf pigments that act like tiny biological solar panels. Then there's water, or H2O, absorbed by the roots and pulled upward. Finally, the plant breathes in carbon dioxide through microscopic pores called 'stomata'—think of these as tiny mouths on the leaf's surface.",
+          "audioRef": "audio/tts_action_fnIzshcd.mp3"
+        },
+        {
+          "id": "action_OZoIXOgw",
+          "type": "spotlight",
+          "elementId": "table_rfNAjEx6"
+        },
+        {
+          "id": "action_ZqKapM1w",
+          "type": "speech",
+          "text": "This table summarizes our 'grocery list' for the plant. Notice the sources: the Sun for energy, the soil for water, and the atmosphere for CO2. Without any one of these, the factory comes to a halt.",
+          "audioRef": "audio/tts_action_ZqKapM1w.mp3"
+        },
+        {
+          "id": "action_Q3_G1tQ3",
+          "type": "discussion",
+          "topic": "The impact of missing ingredients",
+          "prompt": "Maya, considering these three ingredients, what do you think happens to the 'photosynthesis factory' if a plant is kept in a completely dark room even if it has plenty of water and air?",
+          "agentId": "gen-F5Os52Il"
+        }
+      ]
+    },
+    {
+      "type": "slide",
+      "title": "The Plant's Solar Panel: The Chloroplast",
+      "order": 3,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "Lzgfwa-rrSWvQy9HkqS0C",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "theme": {
+            "backgroundColor": "#ffffff",
+            "themeColors": [
+              "#5b9bd5",
+              "#ed7d31",
+              "#a5a5a5",
+              "#ffc000",
+              "#4472c4"
+            ],
+            "fontColor": "#333333",
+            "fontName": "Microsoft YaHei",
+            "outline": {
+              "color": "#d14424",
+              "width": 2,
+              "style": "solid"
+            },
+            "shadow": {
+              "h": 0,
+              "v": 0,
+              "blur": 10,
+              "color": "#000000"
+            }
+          },
+          "elements": [
+            {
+              "id": "text_BA9EOy07",
+              "type": "text",
+              "left": 60,
+              "top": 40,
+              "width": 880,
+              "height": 118,
+              "content": "<h1 style=\"font-size: 32px; color: #166534;\">The Plant's Solar Panel: The Chloroplast</h1>",
+              "defaultFontName": "Microsoft YaHei",
+              "defaultColor": "#166534",
+              "rotate": 0
+            },
+            {
+              "id": "shape_BBgPlLVv",
+              "type": "shape",
+              "left": 70,
+              "top": 140,
+              "width": 450,
+              "height": 3,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#4ade80",
+              "fixedRatio": false,
+              "rotate": 0
+            },
+            {
+              "id": "shape_w3lIRPGY",
+              "type": "shape",
+              "left": 60,
+              "top": 170,
+              "width": 360,
+              "height": 330,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f0fdf4",
+              "fixedRatio": false,
+              "rotate": 0
+            },
+            {
+              "id": "text_UwrkVuN2",
+              "type": "text",
+              "left": 80,
+              "top": 185,
+              "width": 320,
+              "height": 94,
+              "content": "<p style=\"font-size: 16px; color: #333333;\"><strong>• Chlorophyll:</strong> The green pigment that acts like an antenna to capture light energy.</p>",
+              "defaultFontName": "Microsoft YaHei",
+              "defaultColor": "#333333",
+              "rotate": 0
+            },
+            {
+              "id": "text_RwSENsBv",
+              "type": "text",
+              "left": 80,
+              "top": 285,
+              "width": 320,
+              "height": 94,
+              "content": "<p style=\"font-size: 16px; color: #333333;\"><strong>• Thylakoids:</strong> Internal stacks of discs where light energy is converted into chemical power.</p>",
+              "defaultFontName": "Microsoft YaHei",
+              "defaultColor": "#333333",
+              "rotate": 0
+            },
+            {
+              "id": "text_-HM-c3k2",
+              "type": "text",
+              "left": 80,
+              "top": 385,
+              "width": 320,
+              "height": 94,
+              "content": "<p style=\"font-size: 16px; color: #333333;\"><strong>• Stroma:</strong> The aqueous fluid surrounding stacks where food molecules are assembled.</p>",
+              "defaultFontName": "Microsoft YaHei",
+              "defaultColor": "#333333",
+              "rotate": 0
+            },
+            {
+              "id": "image_I5Z08zeW",
+              "type": "image",
+              "left": 460,
+              "top": 170,
+              "width": 480,
+              "height": 270,
+              "src": "gen_img_ZJkfG4iK",
+              "fixedRatio": true,
+              "rotate": 0
+            },
+            {
+              "id": "text_GlmNC29a",
+              "type": "text",
+              "left": 460,
+              "top": 450,
+              "width": 480,
+              "height": 46,
+              "content": "<p style=\"font-size: 14px; text-align: center; color: #666666;\">Structure: Thylakoid Stacks and Stroma Fluid</p>",
+              "defaultFontName": "Microsoft YaHei",
+              "defaultColor": "#666666",
+              "rotate": 0
+            }
+          ],
+          "background": {
+            "type": "solid",
+            "color": "#ffffff"
+          }
+        }
+      },
+      "actions": [
+        {
+          "id": "action_XzsD7zpc",
+          "type": "spotlight",
+          "elementId": "text_BA9EOy07"
+        },
+        {
+          "id": "action_4nRvSdW8",
+          "type": "speech",
+          "text": "Now that we've identified the raw ingredients like CO2 and water, let's step inside the factory itself. This is the chloroplast—the plant's very own solar panel.",
+          "audioRef": "audio/tts_action_4nRvSdW8.mp3"
+        },
+        {
+          "id": "action_DsmrNVIu",
+          "type": "spotlight",
+          "elementId": "image_I5Z08zeW"
+        },
+        {
+          "id": "action_DbJEw7Oj",
+          "type": "speech",
+          "text": "As you can see in this diagram, the chloroplast isn't just a simple container. It has a complex internal structure designed to maximize energy collection.",
+          "audioRef": "audio/tts_action_DbJEw7Oj.mp3"
+        },
+        {
+          "id": "action_bQLqGyIt",
+          "type": "laser",
+          "elementId": "text_UwrkVuN2"
+        },
+        {
+          "id": "action_PQhQWCW3",
+          "type": "speech",
+          "text": "First, there's Chlorophyll. This is the green pigment that makes plants look, well, green! Think of it as an 'energy antenna' that's tuned specifically to capture photons from sunlight.",
+          "audioRef": "audio/tts_action_PQhQWCW3.mp3"
+        },
+        {
+          "id": "action_9qHO8LSp",
+          "type": "spotlight",
+          "elementId": "text_RwSENsBv"
+        },
+        {
+          "id": "action_F29URfdY",
+          "type": "speech",
+          "text": "The chlorophyll is packed into these stacks of discs called Thylakoids. They look a bit like stacks of green pancakes. This is where the 'light-dependent' reactions occur—the very first step of the process.",
+          "audioRef": "audio/tts_action_F29URfdY.mp3"
+        },
+        {
+          "id": "action_hS06nxH9",
+          "type": "spotlight",
+          "elementId": "text_-HM-c3k2"
+        },
+        {
+          "id": "action_YITWBGRp",
+          "type": "speech",
+          "text": "Finally, we have the Stroma, which is the clear, aqueous fluid surrounding those stacks. This is where the chemical 'building' happens in the later stages.",
+          "audioRef": "audio/tts_action_YITWBGRp.mp3"
+        },
+        {
+          "id": "action_dyOIfUsA",
+          "type": "spotlight",
+          "elementId": "text_GlmNC29a"
+        },
+        {
+          "id": "action_CNqvEUkH",
+          "type": "speech",
+          "text": "So, keep this layout in mind: Thylakoid stacks for catching light and the Stroma fluid for building sugars. We're about to see this in action in our interactive factory simulation!",
+          "audioRef": "audio/tts_action_CNqvEUkH.mp3"
+        }
+      ]
+    },
+    {
+      "type": "interactive",
+      "title": "Interactive Photosynthesis Factory",
+      "order": 4,
+      "content": {
+        "type": "interactive",
+        "url": "",
+        "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Photosynthesis Simulation</title>\n    <script src=\"https://cdn.tailwindcss.com\"></script>\n    <style>\n        @keyframes drift {\n            0% { transform: translateY(0px) rotate(0deg); }\n            50% { transform: translateY(-10px) rotate(5deg); }\n            100% { transform: translateY(0px) rotate(0deg); }\n        }\n        .animate-drift { animation: drift 4s ease-in-out infinite; }\n        .slider-thumb::-webkit-slider-thumb {\n            -webkit-appearance: none;\n            appearance: none;\n            width: 18px;\n            height: 18px;\n            background: #10b981;\n            cursor: pointer;\n            border-radius: 50%;\n        }\n        canvas { touch-action: none; }\n    </style>\n\n<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css\">\n<script src=\"https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js\"></script>\n<script src=\"https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js\"></script>\n<script>\ndocument.addEventListener(\"DOMContentLoaded\", function() {\n    const katexOptions = {\n        delimiters: [\n            {left: '\\\\[', right: '\\\\]', display: true},\n            {left: '\\\\(', right: '\\\\)', display: false},\n            {left: '$$', right: '$$', display: true},\n            {left: '$', right: '$', display: false}\n        ],\n        throwOnError: false,\n        strict: false,\n        trust: true\n    };\n\n    let renderTimeout;\n    function safeRender() {\n        if (renderTimeout) clearTimeout(renderTimeout);\n        renderTimeout = setTimeout(() => {\n            renderMathInElement(document.body, katexOptions);\n        }, 100);\n    }\n\n    renderMathInElement(document.body, katexOptions);\n\n    const observer = new MutationObserver((mutations) => {\n        let shouldRender = false;\n        mutations.forEach((mutation) => {\n            if (mutation.target &&\n                mutation.target.className &&\n                typeof mutation.target.className === 'string' &&\n                mutation.target.className.includes('katex')) {\n                return;\n            }\n            shouldRender = true;\n        });\n\n        if (shouldRender) {\n            safeRender();\n        }\n    });\n\n    observer.observe(document.body, {\n        childList: true,\n        subtree: true,\n        characterData: true\n    });\n\n    setInterval(() => {\n        const text = document.body.innerText;\n        if (text.includes('\\\\(') || text.includes('$$')) {\n            safeRender();\n        }\n    }, 2000);\n});\n</script>\n</head>\n<body class=\"bg-emerald-50 text-slate-800 font-sans min-h-screen flex flex-col items-center p-4\">\n\n    <!-- Header & Formula -->\n    <header class=\"text-center mb-4 max-w-2xl\">\n        <h1 class=\"text-3xl font-bold text-emerald-800 mb-2\">Photosynthesis Explorer</h1>\n        <div class=\"bg-white p-3 rounded-lg shadow-sm border border-emerald-100 inline-block\">\n            <p class=\"text-lg font-mono\">\n                \\[ 6CO_2 + 6H_2O + \\text{light energy} \\xrightarrow{\\text{chloroplast}} C_6H_{12}O_6 + 6O_2 \\]\n            </p>\n        </div>\n    </header>\n\n    <main class=\"w-full max-w-5xl grid grid-cols-1 lg:grid-cols-3 gap-6\">\n        \n        <!-- Simulation Area -->\n        <div class=\"lg:col-span-2 bg-emerald-900 rounded-3xl relative overflow-hidden shadow-2xl min-h-[500px] border-8 border-emerald-800\">\n            <!-- Background Gradient for Light -->\n            <div id=\"lightOverlay\" class=\"absolute inset-0 transition-opacity duration-500 pointer-events-none\" style=\"background: radial-gradient(circle, rgba(255,255,200,0.3) 0%, rgba(0,0,0,0) 70%); opacity: 0.5;\"></div>\n            \n            <canvas id=\"simCanvas\" class=\"absolute inset-0 w-full h-full\"></canvas>\n\n            <!-- Chloroplast UI Overlay -->\n            <div class=\"absolute bottom-6 left-6 right-6 flex justify-between items-end pointer-events-none\">\n                <div class=\"bg-black/40 backdrop-blur-md p-4 rounded-xl text-white border border-white/20\">\n                    <p class=\"text-xs uppercase tracking-widest opacity-70\">Production Rate</p>\n                    <div class=\"w-48 h-3 bg-gray-700 rounded-full mt-2 overflow-hidden\">\n                        <div id=\"rateBar\" class=\"h-full bg-emerald-400 transition-all duration-300\" style=\"width: 0%\"></div>\n                    </div>\n                    <p id=\"limitingFactor\" class=\"text-xs mt-2 italic text-emerald-200\">Limiting Factor: None</p>\n                </div>\n\n                <div class=\"bg-black/40 backdrop-blur-md p-4 rounded-xl text-white border border-white/20 text-right\">\n                    <p class=\"text-xs uppercase tracking-widest opacity-70\">Accumulated Glucose</p>\n                    <p id=\"glucoseCount\" class=\"text-2xl font-bold text-yellow-400\">0</p>\n                </div>\n            </div>\n\n            <!-- Labels -->\n            <div class=\"absolute top-4 left-4 text-emerald-200 text-sm font-bold opacity-50 uppercase tracking-tighter\">Inner Leaf (Mesophyll)</div>\n        </div>\n\n        <!-- Controls Sidebar -->\n        <div class=\"flex flex-col gap-4\">\n            <!-- Controls Card -->\n            <div class=\"bg-white p-6 rounded-2xl shadow-lg border border-emerald-100\">\n                <h3 class=\"font-bold text-emerald-900 mb-4 border-b pb-2\">Environmental Variables</h3>\n                \n                <!-- Light -->\n                <div class=\"mb-6\">\n                    <div class=\"flex justify-between text-sm mb-2\">\n                        <label class=\"font-semibold text-orange-600\">Light Intensity</label>\n                        <span id=\"lightVal\">50%</span>\n                    </div>\n                    <input type=\"range\" id=\"lightInput\" min=\"0\" max=\"100\" value=\"50\" class=\"w-full h-2 bg-orange-100 rounded-lg appearance-none cursor-pointer slider-thumb\">\n                </div>\n\n                <!-- CO2 -->\n                <div class=\"mb-6\">\n                    <div class=\"flex justify-between text-sm mb-2\">\n                        <label class=\"font-semibold text-blue-600\">\\(CO_2\\) Concentration</label>\n                        <span id=\"co2Val\">50%</span>\n                    </div>\n                    <input type=\"range\" id=\"co2Input\" min=\"0\" max=\"100\" value=\"50\" class=\"w-full h-2 bg-blue-100 rounded-lg appearance-none cursor-pointer slider-thumb\">\n                </div>\n\n                <!-- Water -->\n                <div class=\"mb-2\">\n                    <div class=\"flex justify-between text-sm mb-2\">\n                        <label class=\"font-semibold text-cyan-500\">Water Availability</label>\n                        <span id=\"h2oVal\">50%</span>\n                    </div>\n                    <input type=\"range\" id=\"h2oInput\" min=\"0\" max=\"100\" value=\"50\" class=\"w-full h-2 bg-cyan-100 rounded-lg appearance-none cursor-pointer slider-thumb\">\n                </div>\n            </div>\n\n            <!-- Science Facts Card -->\n            <div class=\"bg-emerald-800 p-6 rounded-2xl text-emerald-50 shadow-lg\">\n                <h3 class=\"font-bold mb-2 flex items-center gap-2\">\n                    <svg class=\"w-5 h-5\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z\"></path></svg>\n                    Did you know?\n                </h3>\n                <p id=\"factBox\" class=\"text-sm leading-relaxed opacity-90 transition-opacity duration-500\">\n                    The <strong>photolysis</strong> phase splits water molecules using light energy, releasing Oxygen as a byproduct.\n                </p>\n            </div>\n        </div>\n    </main>\n\n    <footer class=\"mt-8 text-center text-emerald-600/60 text-sm max-w-2xl px-4\">\n        <p>Adjust the sliders to see how <strong>Liebig's Law of the Minimum</strong> limits growth. Notice that oxygen is produced from water molecules, not carbon dioxide.</p>\n    </footer>\n\n    <script>\n        const canvas = document.getElementById('simCanvas');\n        const ctx = canvas.getContext('2d');\n        const lightInput = document.getElementById('lightInput');\n        const co2Input = document.getElementById('co2Input');\n        const h2oInput = document.getElementById('h2oInput');\n        const lightOverlay = document.getElementById('lightOverlay');\n        const rateBar = document.getElementById('rateBar');\n        const limitingFactorText = document.getElementById('limitingFactor');\n        const glucoseCountText = document.getElementById('glucoseCount');\n        const factBox = document.getElementById('factBox');\n\n        let width, height;\n        let particles = [];\n        let glucoseCount = 0;\n        let frame = 0;\n\n        // Scientific constants\n        const SATURATION_POINT = 85; // % value where light rate plateaus\n        const STOICH_CO2 = 6;\n        const STOICH_H2O = 6;\n        const STOICH_O2 = 6;\n        \n        let pool = { co2: 0, h2o: 0, light: 0 };\n\n        const facts = [\n            \"<strong>Photolysis:</strong> Light energy absorbed by chlorophyll splits water molecules to release oxygen.\",\n            \"<strong>Carbon Fixation:</strong> The Calvin Cycle converts CO2 into glucose using energy from light reactions.\",\n            \"<strong>Liebig's Law:</strong> The rate of photosynthesis is limited by whichever resource is in shortest supply.\",\n            \"<strong>Saturation:</strong> Even with infinite light, the plant's enzymes can only work so fast!\",\n            \"<strong>Conservation:</strong> Photosynthesis transforms solar energy into stable chemical bonds in glucose.\"\n        ];\n\n        class Particle {\n            constructor(type) {\n                this.type = type; // 'co2', 'h2o', 'o2', 'glucose', 'photon'\n                this.init();\n            }\n\n            init() {\n                this.x = Math.random() * width;\n                this.y = Math.random() * height;\n                this.life = 1.0;\n                \n                if (this.type === 'photon') {\n                    this.vx = (Math.random() - 0.5) * 2;\n                    this.vy = 4 + Math.random() * 4;\n                    this.y = -10;\n                    this.color = 'rgba(255, 255, 150, 0.6)';\n                    this.size = 2;\n                } else if (this.type === 'co2') {\n                    this.vx = (Math.random() - 0.5) * 1;\n                    this.vy = (Math.random() - 0.5) * 1;\n                    this.color = '#60a5fa'; // Blue\n                    this.size = 4;\n                } else if (this.type === 'h2o') {\n                    this.vx = (Math.random() - 0.5) * 1;\n                    this.vy = (Math.random() - 0.5) * 1;\n                    this.color = '#22d3ee'; // Cyan\n                    this.size = 3;\n                } else if (this.type === 'o2') {\n                    this.vx = (Math.random() - 0.5) * 0.5;\n                    this.vy = -2 - Math.random() * 2;\n                    this.color = '#f8fafc'; // White\n                    this.size = 5;\n                } else if (this.type === 'glucose') {\n                    this.vx = (Math.random() - 0.5) * 0.5;\n                    this.vy = 1 + Math.random() * 1;\n                    this.color = '#fbbf24'; // Gold\n                    this.size = 8;\n                }\n            }\n\n            update() {\n                this.x += this.vx;\n                this.y += this.vy;\n\n                if (this.type === 'o2' || this.type === 'glucose' || this.type === 'photon') {\n                    this.life -= 0.005;\n                }\n\n                // Interaction with chloroplast (center zone)\n                const dx = this.x - width/2;\n                const dy = this.y - height/2;\n                const dist = Math.sqrt(dx*dx + dy*dy);\n                \n                if (dist < 80 && (this.type === 'co2' || this.type === 'h2o' || this.type === 'photon')) {\n                    if (this.type === 'co2') pool.co2++;\n                    if (this.type === 'h2o') pool.h2o++;\n                    if (this.type === 'photon') pool.light++;\n                    this.life = 0;\n                }\n            }\n\n            draw() {\n                ctx.beginPath();\n                ctx.globalAlpha = this.life;\n                ctx.fillStyle = this.color;\n                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);\n                ctx.fill();\n                ctx.globalAlpha = 1;\n\n                if (this.type === 'glucose') {\n                    ctx.fillStyle = 'black';\n                    ctx.font = '8px Arial';\n                    ctx.fillText('C6', this.x - 5, this.y + 3);\n                }\n            }\n        }\n\n        function resize() {\n            width = canvas.parentElement.clientWidth;\n            height = canvas.parentElement.clientHeight;\n            canvas.width = width;\n            canvas.height = height;\n        }\n\n        function spawnInput(type, intensity) {\n            if (Math.random() * 100 < intensity * 0.4) {\n                particles.push(new Particle(type));\n            }\n        }\n\n        function updateSimulation() {\n            frame++;\n            ctx.clearRect(0, 0, width, height);\n\n            const L = parseFloat(lightInput.value);\n            const C = parseFloat(co2Input.value);\n            const W = parseFloat(h2oInput.value);\n\n            // Update Labels\n            document.getElementById('lightVal').innerText = L + '%';\n            document.getElementById('co2Val').innerText = C + '%';\n            document.getElementById('h2oVal').innerText = W + '%';\n\n            // Visual feedback: Light overlay\n            lightOverlay.style.opacity = L / 100;\n\n            // Liebig's Law & Saturation\n            // Beer-Lambert / Saturation approximation: Rate = 1 - e^(-k * Intensity)\n            const lightEffect = 100 * (1 - Math.exp(-L / 35));\n            const co2Effect = C;\n            const h2oEffect = W;\n\n            const rate = Math.min(lightEffect, co2Effect, h2oEffect);\n            rateBar.style.width = rate + '%';\n\n            // Determine limiting factor\n            if (rate < 5) {\n                limitingFactorText.innerText = \"Limiting Factor: Insufficient Inputs\";\n            } else if (lightEffect <= co2Effect && lightEffect <= h2oEffect) {\n                limitingFactorText.innerText = \"Limiting Factor: Light Intensity\";\n            } else if (co2Effect <= lightEffect && co2Effect <= h2oEffect) {\n                limitingFactorText.innerText = \"Limiting Factor: CO2 Concentration\";\n            } else {\n                limitingFactorText.innerText = \"Limiting Factor: Water Availability\";\n            }\n\n            // Spawn inputs\n            spawnInput('photon', L);\n            spawnInput('co2', C);\n            spawnInput('h2o', W);\n\n            // Chloroplast Rendering\n            ctx.save();\n            ctx.translate(width/2, height/2);\n            ctx.beginPath();\n            ctx.ellipse(0, 0, 100, 60, 0, 0, Math.PI * 2);\n            ctx.fillStyle = '#064e3b';\n            ctx.fill();\n            ctx.strokeStyle = '#10b981';\n            ctx.lineWidth = 4;\n            ctx.stroke();\n            \n            // Internal structures (Thylakoids)\n            ctx.fillStyle = '#065f46';\n            for(let i=-2; i<=2; i++) {\n                ctx.fillRect(i*25 - 10, -20, 20, 40);\n            }\n            ctx.restore();\n\n            // Process Production Logic\n            // Based on stoichiometry: 6 CO2 + 6 H2O -> 1 Glucose + 6 O2\n            // We use the 'rate' to drive emission\n            if (rate > 5 && frame % Math.max(1, Math.floor(120 - rate)) === 0) {\n                // Emit O2 (Always from water side of logic)\n                for(let i=0; i<STOICH_O2; i++) {\n                    particles.push(new Particle('o2'));\n                }\n                // Emit Glucose\n                particles.push(new Particle('glucose'));\n                glucoseCount++;\n                glucoseCountText.innerText = glucoseCount;\n            }\n\n            // Update and draw particles\n            particles = particles.filter(p => p.life > 0);\n            particles.forEach(p => {\n                p.update();\n                p.draw();\n            });\n\n            // Update facts periodically\n            if (frame % 600 === 0) {\n                factBox.style.opacity = 0;\n                setTimeout(() => {\n                    factBox.innerHTML = facts[Math.floor(Math.random() * facts.length)];\n                    factBox.style.opacity = 1;\n                }, 500);\n            }\n\n            requestAnimationFrame(updateSimulation);\n        }\n\n        window.addEventListener('resize', resize);\n        resize();\n        updateSimulation();\n    </script>\n</body>\n</html>"
+      },
+      "actions": [
+        {
+          "id": "action_zTxYk2KV",
+          "type": "speech",
+          "text": "Welcome to the factory floor! Now that we've seen where the magic happens inside the chloroplast, it's your turn to be the plant manager. To begin, try dragging those sunlight icons, water drops, and CO2 bubbles right into the chloroplast on your screen.",
+          "audioRef": "audio/tts_action_zTxYk2KV.mp3"
+        },
+        {
+          "id": "action_dF4GfIfQ",
+          "type": "speech",
+          "text": "As Sophie mentioned earlier, photosynthesis requires a specific balance. Watch what happens when you combine the ingredients in the correct ratio; you'll see glucose molecules forming while oxygen bubbles are released as a byproduct.",
+          "audioRef": "audio/tts_action_dF4GfIfQ.mp3"
+        },
+        {
+          "id": "action_Mvc6BDKu",
+          "type": "speech",
+          "text": "This is so cool! Look at the oxygen floating away. I’m going to use the sliders at the bottom to crank up the 'Light Intensity.' I want to see if we can make this factory work double-time!",
+          "audioRef": "audio/tts_action_Mvc6BDKu.mp3"
+        },
+        {
+          "id": "action_rsUqp1w7",
+          "type": "speech",
+          "text": "Great idea, Maya. While you're experimenting, keep a close eye on the production rate. Try limiting the 'Water Availability' as well to see how it affects the plant's ability to generate food. It’s all about finding that optimal environment for growth.",
+          "audioRef": "audio/tts_action_rsUqp1w7.mp3"
+        },
+        {
+          "id": "action_IhIu45dM",
+          "type": "speech",
+          "text": "You've just visualized the fundamental goal of this entire process: turning simple raw ingredients into the energy that fuels life. Now that you've mastered the factory inputs, let's head to the next page to see exactly how sunlight is captured in the Light-Dependent Reactions.",
+          "audioRef": "audio/tts_action_IhIu45dM.mp3"
+        }
+      ]
+    },
+    {
+      "type": "slide",
+      "title": "Stage 1: The Light-Dependent Reactions",
+      "order": 5,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "xy2qOyw9Oui8SDNrBK0TS",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "theme": {
+            "backgroundColor": "#ffffff",
+            "themeColors": [
+              "#5b9bd5",
+              "#ed7d31",
+              "#a5a5a5",
+              "#ffc000",
+              "#4472c4"
+            ],
+            "fontColor": "#333333",
+            "fontName": "Microsoft YaHei",
+            "outline": {
+              "color": "#d14424",
+              "width": 2,
+              "style": "solid"
+            },
+            "shadow": {
+              "h": 0,
+              "v": 0,
+              "blur": 10,
+              "color": "#000000"
+            }
+          },
+          "elements": [
+            {
+              "id": "text_CDxEPfFR",
+              "type": "text",
+              "left": 60,
+              "top": 50,
+              "width": 880,
+              "height": 70,
+              "content": "<p style=\"font-size: 32px;\"><strong>Stage 1: The Light-Dependent Reactions</strong></p>",
+              "defaultFontName": "Microsoft YaHei",
+              "defaultColor": "#2e7d32",
+              "rotate": 0
+            },
+            {
+              "id": "shape_pT0Lsu5_",
+              "type": "shape",
+              "left": 60,
+              "top": 125,
+              "width": 880,
+              "height": 3,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#81c784",
+              "fixedRatio": false,
+              "rotate": 0
+            },
+            {
+              "id": "shape_5zosRCVf",
+              "type": "shape",
+              "left": 60,
+              "top": 160,
+              "width": 380,
+              "height": 350,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f1f8e9",
+              "fixedRatio": false,
+              "rotate": 0
+            },
+            {
+              "id": "text__mMbvkmF",
+              "type": "text",
+              "left": 80,
+              "top": 180,
+              "width": 340,
+              "height": 52,
+              "content": "<p style=\"font-size: 20px;\"><strong>Site:</strong> Chloroplast Thylakoids</p>",
+              "defaultFontName": "Microsoft YaHei",
+              "defaultColor": "#1b5e20",
+              "rotate": 0
+            },
+            {
+              "id": "text_NX5gzzqq",
+              "type": "text",
+              "left": 80,
+              "top": 240,
+              "width": 340,
+              "height": 103,
+              "content": "<p style=\"font-size: 18px;\"><strong>• Photolysis:</strong> Light energy splits water molecules, releasing Oxygen into the atmosphere.</p>",
+              "defaultFontName": "Microsoft YaHei",
+              "defaultColor": "#333333",
+              "rotate": 0
+            },
+            {
+              "id": "text_GhwJ11gp",
+              "type": "text",
+              "left": 80,
+              "top": 350,
+              "width": 340,
+              "height": 130,
+              "content": "<p style=\"font-size: 18px;\"><strong>• Energy Charge:</strong> Sunlight captures energy into molecular \"batteries\": <strong>ATP</strong> and <strong>NADPH</strong>.</p>",
+              "defaultFontName": "Microsoft YaHei",
+              "defaultColor": "#333333",
+              "rotate": 0
+            },
+            {
+              "id": "video_mHrmrAR7",
+              "type": "video",
+              "left": 480,
+              "top": 160,
+              "width": 460,
+              "height": 259,
+              "src": "gen_vid_ip_oqZov",
+              "autoplay": true,
+              "rotate": 0
+            },
+            {
+              "id": "text_dlGD2bWX",
+              "type": "text",
+              "left": 480,
+              "top": 425,
+              "width": 460,
+              "height": 46,
+              "content": "<p style=\"font-size: 16px; text-align: center; color: #666666;\"><em>Visualizing the Solar-to-Chemical Conversion</em></p>",
+              "defaultFontName": "Microsoft YaHei",
+              "defaultColor": "#666666",
+              "rotate": 0
+            },
+            {
+              "id": "line_9eEjvcTM",
+              "type": "line",
+              "left": 75,
+              "top": 245,
+              "width": 3,
+              "start": [
+                0,
+                0
+              ],
+              "end": [
+                0,
+                220
+              ],
+              "style": "solid",
+              "color": "#4caf50",
+              "points": [
+                "",
+                ""
+              ],
+              "rotate": 0
+            }
+          ],
+          "background": {
+            "type": "solid",
+            "color": "#ffffff"
+          }
+        }
+      },
+      "actions": [
+        {
+          "id": "action_kst1SXuu",
+          "type": "spotlight",
+          "elementId": "text_CDxEPfFR"
+        },
+        {
+          "id": "action_YlArqLtq",
+          "type": "speech",
+          "text": "To see that capture in action, we need to focus on Stage 1: the Light-Dependent Reactions. This is where the plant's 'solar panels' first meet the sun's rays.",
+          "audioRef": "audio/tts_action_YlArqLtq.mp3"
+        },
+        {
+          "id": "action_C32Dg6dd",
+          "type": "spotlight",
+          "elementId": "text__mMbvkmF"
+        },
+        {
+          "id": "action_q_J4NrIh",
+          "type": "speech",
+          "text": "As we just covered in our tour of the chloroplast, this activity takes place inside the thylakoids. Think of these as the biological machinery that turns light into power.",
+          "audioRef": "audio/tts_action_q_J4NrIh.mp3"
+        },
+        {
+          "id": "action_F2teMfxP",
+          "type": "spotlight",
+          "elementId": "text_NX5gzzqq"
+        },
+        {
+          "id": "action_LlB-erbk",
+          "type": "speech",
+          "text": "Here, light energy performs a task Sophie calls 'photolysis.' It essentially uses light like molecular scissors to split water molecules apart, releasing the oxygen we breathe as a byproduct.",
+          "audioRef": "audio/tts_action_LlB-erbk.mp3"
+        },
+        {
+          "id": "action_gupFnoPf",
+          "type": "spotlight",
+          "elementId": "text_GhwJ11gp"
+        },
+        {
+          "id": "action_UsXXKYax",
+          "type": "speech",
+          "text": "While oxygen is a great bonus for us, the plant's main goal is to charge its batteries. It captures energy into two molecules, ATP and NADPH, which act as the fuel for the next stage of the factory.",
+          "audioRef": "audio/tts_action_UsXXKYax.mp3"
+        },
+        {
+          "id": "action_Y6lTuEZZ",
+          "type": "play_video",
+          "elementId": "video_mHrmrAR7"
+        },
+        {
+          "id": "action_VQFPnfRr",
+          "type": "speech",
+          "text": "Watching those molecules shift shows just how dynamic the solar-to-chemical conversion is. Without this step, the plant wouldn't have the energy needed to build its food later on.",
+          "audioRef": "audio/tts_action_VQFPnfRr.mp3"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "title": "Check Your Knowledge: Basics & Stage 1",
+      "order": 6,
+      "content": {
+        "type": "quiz",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "single",
+            "question": "Where do the light-dependent reactions of photosynthesis specifically take place within the chloroplast?",
+            "options": [
+              {
+                "value": "A",
+                "label": "Stroma"
+              },
+              {
+                "value": "B",
+                "label": "Thylakoid membranes"
+              },
+              {
+                "value": "C",
+                "label": "Outer membrane"
+              },
+              {
+                "value": "D",
+                "label": "Mitochondria"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "The light-dependent reactions occur in the thylakoid membranes because they contain the pigment chlorophyll, which is essential for capturing light energy. The stroma is the fluid-filled space where the second stage (Calvin Cycle) occurs.",
+            "points": 10,
+            "hasAnswer": true
+          },
+          {
+            "id": "q2",
+            "type": "multiple",
+            "question": "Which of the following are primary inputs or direct products of the light-dependent reactions? (Select all that apply)",
+            "options": [
+              {
+                "value": "A",
+                "label": "Water (input)"
+              },
+              {
+                "value": "B",
+                "label": "Oxygen (output)"
+              },
+              {
+                "value": "C",
+                "label": "Carbon dioxide (input)"
+              },
+              {
+                "value": "D",
+                "label": "ATP (output)"
+              }
+            ],
+            "answer": [
+              "A",
+              "B",
+              "D"
+            ],
+            "analysis": "In the first stage, water is an input that undergoes photolysis (splitting by light) to produce oxygen as a byproduct. ATP and NADPH are also produced as energy outputs to power the next stage. Carbon dioxide is an input for the second stage, not the first.",
+            "points": 15,
+            "hasAnswer": true
+          },
+          {
+            "id": "q3",
+            "type": "single",
+            "question": "Think of chlorophyll as a solar panel for a plant cell. What is its primary role during the first stage of photosynthesis?",
+            "options": [
+              {
+                "value": "A",
+                "label": "To absorb light energy and excite electrons"
+              },
+              {
+                "value": "B",
+                "label": "To convert glucose into energy for the plant"
+              },
+              {
+                "value": "C",
+                "label": "To release carbon dioxide into the atmosphere"
+              },
+              {
+                "value": "D",
+                "label": "To absorb water from the soil"
+              }
+            ],
+            "answer": [
+              "A"
+            ],
+            "analysis": "Chlorophyll is a pigment that absorbs solar energy. This energy is used to 'excite' electrons, moving them to a higher energy level to initiate the chemical process of converting light into chemical energy. It does not create glucose or absorb water.",
+            "points": 10,
+            "hasAnswer": true
+          }
+        ]
+      },
+      "actions": [
+        {
+          "id": "action_dlCynX7Z",
+          "type": "speech",
+          "text": "Now that we've seen how that solar-to-chemical conversion works in theory, let’s see how well you can identify the specifics within the plant's tiny factory. This quiz will cover the basics we've explored so far, particularly focusing on that first crucial stage.",
+          "audioRef": "audio/tts_action_dlCynX7Z.mp3"
+        },
+        {
+          "id": "action_jZ6qus0a",
+          "type": "speech",
+          "text": "Think back to the analogy of the 'solar panel' for chlorophyll that we just mentioned. It's not just sitting there; it's actively capturing energy to get those electrons moving! As you look at the first question, remember exactly where those panels are located.",
+          "audioRef": "audio/tts_action_jZ6qus0a.mp3"
+        },
+        {
+          "id": "action_DkVVnc34",
+          "type": "speech",
+          "text": "For the second question, pay close attention to the inputs and outputs. Remember: water goes in to provide electrons, and oxygen is released as a byproduct—which is lucky for us! The ATP generated here is the 'battery' that powers the next stage.",
+          "audioRef": "audio/tts_action_DkVVnc34.mp3"
+        },
+        {
+          "id": "action_uHYbut5r",
+          "type": "speech",
+          "text": "Great work on those questions. Understanding the thylakoid's role and how light energy is harvested is essential before we move on to the Calvin Cycle on the next page, where all this stored energy is actually used to build sugar.",
+          "audioRef": "audio/tts_action_uHYbut5r.mp3"
+        },
+        {
+          "id": "action_VAB1niYW",
+          "type": "discussion",
+          "topic": "The dependency of Stage 1 on light energy.",
+          "prompt": "If a plant were moved into a completely dark room, which specific part of the light-dependent process would fail first, and how would that affect the rest of the factory?",
+          "agentId": "gen-qEqCatJ0"
+        }
+      ]
+    },
+    {
+      "type": "slide",
+      "title": "Stage 2: The Calvin Cycle",
+      "order": 7,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "_56djZnbBSAMmr_GK4Uip",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "theme": {
+            "backgroundColor": "#ffffff",
+            "themeColors": [
+              "#5b9bd5",
+              "#ed7d31",
+              "#a5a5a5",
+              "#ffc000",
+              "#4472c4"
+            ],
+            "fontColor": "#333333",
+            "fontName": "Microsoft YaHei",
+            "outline": {
+              "color": "#d14424",
+              "width": 2,
+              "style": "solid"
+            },
+            "shadow": {
+              "h": 0,
+              "v": 0,
+              "blur": 10,
+              "color": "#000000"
+            }
+          },
+          "elements": [
+            {
+              "id": "text_umsmLiOI",
+              "type": "text",
+              "left": 60,
+              "top": 50,
+              "width": 880,
+              "height": 70,
+              "content": "<p style=\"font-size: 32px; color: #1a4731;\"><strong>Stage 2: The Calvin Cycle</strong></p>",
+              "defaultFontName": "Microsoft YaHei",
+              "defaultColor": "#1a4731",
+              "rotate": 0
+            },
+            {
+              "id": "shape_lk2CkLE8",
+              "type": "shape",
+              "left": 60,
+              "top": 120,
+              "width": 380,
+              "height": 4,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#4ade80",
+              "fixedRatio": false,
+              "rotate": 0
+            },
+            {
+              "id": "shape_L1A-dWHH",
+              "type": "shape",
+              "left": 60,
+              "top": 160,
+              "width": 440,
+              "height": 300,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f0fdf4",
+              "fixedRatio": false,
+              "rotate": 0
+            },
+            {
+              "id": "text_PJrqcE6k",
+              "type": "text",
+              "left": 80,
+              "top": 185,
+              "width": 400,
+              "height": 166,
+              "content": "<p style=\"font-size: 24px; line-height: 1.5;\">• Occurs in the <strong>Stroma</strong></p><p style=\"font-size: 24px; line-height: 1.5;\">• <strong>Light-Independent</strong> Phase</p><p style=\"font-size: 24px; line-height: 1.5;\">• Uses <strong>ATP & NADPH</strong></p><p style=\"font-size: 24px; line-height: 1.5;\">• Building <strong>Glucose</strong>:</p>",
+              "defaultFontName": "Microsoft YaHei",
+              "defaultColor": "#333333",
+              "rotate": 0
+            },
+            {
+              "id": "latex_NB4km0ED",
+              "type": "latex",
+              "left": 130,
+              "top": 355,
+              "width": 200,
+              "height": 70,
+              "latex": "C_6H_{12}O_6",
+              "color": "#16a34a",
+              "align": "center",
+              "html": "<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0715em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">6</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.08125em;\">H</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0813em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">12</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">O</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0278em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">6</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span></span>",
+              "fixedRatio": true,
+              "rotate": 0
+            },
+            {
+              "id": "image_U0c1fpoq",
+              "type": "image",
+              "left": 540,
+              "top": 160,
+              "width": 400,
+              "height": 225,
+              "src": "gen_img_8OZfg1E_",
+              "fixedRatio": true,
+              "rotate": 0
+            },
+            {
+              "id": "text_XnOL1VWa",
+              "type": "text",
+              "left": 540,
+              "top": 395,
+              "width": 400,
+              "height": 46,
+              "content": "<p style=\"font-size: 16px; text-align: center; color: #666666;\"><em>Nature's Kitchen: Turning CO₂ into energy-rich sugar</em></p>",
+              "defaultFontName": "Microsoft YaHei",
+              "defaultColor": "#666666",
+              "rotate": 0
+            },
+            {
+              "id": "text_i4ARCtzy",
+              "type": "text",
+              "left": 60,
+              "top": 475,
+              "width": 880,
+              "height": 46,
+              "content": "<p style=\"font-size: 16px;\"><strong>Key Note:</strong> This stage does not require direct sunlight, utilizing energy stored in Stage 1.</p>",
+              "defaultFontName": "Microsoft YaHei",
+              "defaultColor": "#444444",
+              "rotate": 0
+            }
+          ],
+          "background": {
+            "type": "solid",
+            "color": "#ffffff"
+          }
+        }
+      },
+      "actions": [
+        {
+          "id": "action_XAW9s5ey",
+          "type": "spotlight",
+          "elementId": "text_umsmLiOI"
+        },
+        {
+          "id": "action_XWivqPHp",
+          "type": "speech",
+          "text": "As we discussed on the previous page, Stage 1 captures the sun's energy. Now, we move into the second act of our story: The Calvin Cycle. This is where that captured energy is actually put to work.",
+          "audioRef": "audio/tts_action_XWivqPHp.mp3"
+        },
+        {
+          "id": "action_pGF1krCX",
+          "type": "spotlight",
+          "elementId": "text_PJrqcE6k"
+        },
+        {
+          "id": "action_zltq3kGD",
+          "type": "speech",
+          "text": "This stage occurs in the stroma, which is the clear, fluid-filled space inside the chloroplast that surrounds the thylakoids. We call this the 'Light-Independent Phase' because, while Stage 1 needed direct sunlight, this cycle can run without it—provided it has the right fuel.",
+          "audioRef": "audio/tts_action_zltq3kGD.mp3"
+        },
+        {
+          "id": "action_c14Y6sCS",
+          "type": "laser",
+          "elementId": "image_U0c1fpoq"
+        },
+        {
+          "id": "action_2ZK0KnWv",
+          "type": "speech",
+          "text": "If you look at the diagram here, you can see the cycle in motion. Think of it as 'Nature's Kitchen'. The plant is taking Carbon Dioxide from the air and 'baking' it into something much more complex and useful.",
+          "audioRef": "audio/tts_action_2ZK0KnWv.mp3"
+        },
+        {
+          "id": "action_vKZs0NBD",
+          "type": "spotlight",
+          "elementId": "latex_NB4km0ED"
+        },
+        {
+          "id": "action_WJ60MNcL",
+          "type": "speech",
+          "text": "The main goal is to produce this: Glucose, or C6H12O6. To build this sugar molecule, the plant uses the ATP and NADPH we just generated in the thylakoids. It's the ultimate transformation of raw gas into solid energy.",
+          "audioRef": "audio/tts_action_WJ60MNcL.mp3"
+        },
+        {
+          "id": "action_8n4s3dZr",
+          "type": "spotlight",
+          "elementId": "text_i4ARCtzy"
+        },
+        {
+          "id": "action_fvo5jHxx",
+          "type": "speech",
+          "text": "A key note to remember: although we call it 'light-independent,' it usually happens during the day because it needs those fresh supplies of ATP from the light-dependent stage. It’s a perfect relay race between the two phases.",
+          "audioRef": "audio/tts_action_fvo5jHxx.mp3"
+        },
+        {
+          "id": "action_MMxfzaAu",
+          "type": "discussion",
+          "topic": "The naming of the 'Light-Independent' reactions",
+          "prompt": "Felix, you've been taking great notes. Why do you think scientists sometimes prefer the term 'Calvin Cycle' over 'Dark Reactions'?",
+          "agentId": "gen-qEqCatJ0"
+        }
+      ]
+    },
+    {
+      "type": "slide",
+      "title": "Why Glucose Matters",
+      "order": 8,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "VbKcEFwsFwof6YSAxXNbl",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "theme": {
+            "backgroundColor": "#ffffff",
+            "themeColors": [
+              "#5b9bd5",
+              "#ed7d31",
+              "#a5a5a5",
+              "#ffc000",
+              "#4472c4"
+            ],
+            "fontColor": "#333333",
+            "fontName": "Microsoft YaHei",
+            "outline": {
+              "color": "#d14424",
+              "width": 2,
+              "style": "solid"
+            },
+            "shadow": {
+              "h": 0,
+              "v": 0,
+              "blur": 10,
+              "color": "#000000"
+            }
+          },
+          "elements": [
+            {
+              "id": "text_kYg8xAKd",
+              "type": "text",
+              "left": 60,
+              "top": 40,
+              "width": 880,
+              "height": 64,
+              "content": "<p style=\"font-size: 28px; color: #2e7d32;\"><strong>Why Glucose Matters: The Fate of Sugar</strong></p>",
+              "defaultFontName": "Microsoft YaHei",
+              "defaultColor": "#2e7d32",
+              "rotate": 0
+            },
+            {
+              "id": "shape_VMsh4TIs",
+              "type": "shape",
+              "left": 60,
+              "top": 110,
+              "width": 880,
+              "height": 2,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#cccccc",
+              "fixedRatio": false,
+              "rotate": 0
+            },
+            {
+              "id": "image_JQGfBLK7",
+              "type": "image",
+              "left": 60,
+              "top": 125,
+              "width": 400,
+              "height": 225,
+              "src": "gen_img_oNGXKjVk",
+              "fixedRatio": true,
+              "rotate": 0
+            },
+            {
+              "id": "shape_tT9Syqo1",
+              "type": "shape",
+              "left": 500,
+              "top": 125,
+              "width": 440,
+              "height": 120,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f1f8e9",
+              "fixedRatio": false,
+              "rotate": 0
+            },
+            {
+              "id": "text_yh8by-Zs",
+              "type": "text",
+              "left": 520,
+              "top": 134,
+              "width": 400,
+              "height": 103,
+              "content": "<p style=\"font-size: 18px; color: #1b5e20;\"><strong>Immediate Energy</strong></p><p style=\"font-size: 16px; color: #333333;\">Glucose is burned immediately to provide the fuel needed for plant growth and cellular repair.</p>",
+              "defaultFontName": "Microsoft YaHei",
+              "defaultColor": "#333333",
+              "rotate": 0
+            },
+            {
+              "id": "shape_-uocdCLW",
+              "type": "shape",
+              "left": 500,
+              "top": 250,
+              "width": 440,
+              "height": 120,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#fff8e1",
+              "fixedRatio": false,
+              "rotate": 0
+            },
+            {
+              "id": "text_txYGLNOX",
+              "type": "text",
+              "left": 520,
+              "top": 259,
+              "width": 400,
+              "height": 103,
+              "content": "<p style=\"font-size: 18px; color: #e65100;\"><strong>Starch Storage</strong></p><p style=\"font-size: 16px; color: #333333;\">Extra sugar is converted into starch and stored in roots, tubers, and fruits for long-term use.</p>",
+              "defaultFontName": "Microsoft YaHei",
+              "defaultColor": "#333333",
+              "rotate": 0
+            },
+            {
+              "id": "shape_jqOxzBFV",
+              "type": "shape",
+              "left": 500,
+              "top": 375,
+              "width": 440,
+              "height": 120,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#e1f5fe",
+              "fixedRatio": false,
+              "rotate": 0
+            },
+            {
+              "id": "text_Yeuk25jE",
+              "type": "text",
+              "left": 520,
+              "top": 384,
+              "width": 400,
+              "height": 103,
+              "content": "<p style=\"font-size: 18px; color: #01579b;\"><strong>Structural Cellulose</strong></p><p style=\"font-size: 16px; color: #333333;\">Plants transform glucose into cellulose, the tough building material used to create rigid cell walls.</p>",
+              "defaultFontName": "Microsoft YaHei",
+              "defaultColor": "#333333",
+              "rotate": 0
+            }
+          ],
+          "background": {
+            "type": "solid",
+            "color": "#ffffff"
+          }
+        }
+      },
+      "actions": [
+        {
+          "id": "action_L73DnVhd",
+          "type": "spotlight",
+          "elementId": "text_kYg8xAKd"
+        },
+        {
+          "id": "action_FpyzEkdh",
+          "type": "speech",
+          "text": "So, we've just seen how the Calvin Cycle works its magic to create glucose. But what happens next? Why is this sugar so vital for the plant's survival? Let's look at the three main paths this glucose can take.",
+          "audioRef": "audio/tts_action_FpyzEkdh.mp3"
+        },
+        {
+          "id": "action_ogL70_Xr",
+          "type": "spotlight",
+          "elementId": "text_yh8by-Zs"
+        },
+        {
+          "id": "action_SK8anGY6",
+          "type": "speech",
+          "text": "First, think of glucose as the plant's 'fast cash.' It is often burned immediately through respiration to provide the energy needed for growth and to repair any damaged tissues. Without this instant fuel, the plant's daily operations would come to a halt.",
+          "audioRef": "audio/tts_action_SK8anGY6.mp3"
+        },
+        {
+          "id": "action_GrPZaci8",
+          "type": "spotlight",
+          "elementId": "text_txYGLNOX"
+        },
+        {
+          "id": "action_jSol6dod",
+          "type": "speech",
+          "text": "Next, plants are excellent savers! Any surplus sugar is converted into starch and tucked away in storage organs like roots or fruits. Think of a potato or a crunchy apple—those are essentially concentrated energy warehouses that the plant can tap into when sunlight is scarce.",
+          "audioRef": "audio/tts_action_jSol6dod.mp3"
+        },
+        {
+          "id": "action_En4JEpXj",
+          "type": "spotlight",
+          "elementId": "text_Yeuk25jE"
+        },
+        {
+          "id": "action_MQ6nIFDs",
+          "type": "speech",
+          "text": "Finally, glucose isn't just for eating; it's for building. It is transformed into a tough material called cellulose. This is the structural backbone of the plant, forming strong cell walls that allow even the tallest trees to stand sturdy against the wind. It's amazing how one simple sugar molecule does so much heavy lifting!",
+          "audioRef": "audio/tts_action_MQ6nIFDs.mp3"
+        },
+        {
+          "id": "action_IzWDEfed",
+          "type": "discussion",
+          "topic": "The Versatility of Glucose",
+          "prompt": "Maya, considering these three uses—energy, storage, and structure—which one do you think a young, rapidly growing seedling prioritizes most?",
+          "agentId": "gen-F5Os52Il"
+        }
+      ]
+    },
+    {
+      "type": "slide",
+      "title": "Factors Affecting the Rate",
+      "order": 9,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "kepx-sfFcRP_KM0CHfXjO",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "theme": {
+            "backgroundColor": "#ffffff",
+            "themeColors": [
+              "#5b9bd5",
+              "#ed7d31",
+              "#a5a5a5",
+              "#ffc000",
+              "#4472c4"
+            ],
+            "fontColor": "#333333",
+            "fontName": "Microsoft YaHei",
+            "outline": {
+              "color": "#d14424",
+              "width": 2,
+              "style": "solid"
+            },
+            "shadow": {
+              "h": 0,
+              "v": 0,
+              "blur": 10,
+              "color": "#000000"
+            }
+          },
+          "elements": [
+            {
+              "id": "text_FH3meskI",
+              "type": "text",
+              "left": 60,
+              "top": 60,
+              "width": 880,
+              "height": 70,
+              "content": "<p style=\"font-size: 32px; color: #333333;\"><strong>Factors Affecting Photosynthesis Rate</strong></p>",
+              "defaultFontName": "Microsoft YaHei",
+              "defaultColor": "#333333",
+              "rotate": 0
+            },
+            {
+              "id": "shape_OsIY90cw",
+              "type": "shape",
+              "left": 70,
+              "top": 130,
+              "width": 450,
+              "height": 4,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#4a90e2",
+              "fixedRatio": false,
+              "rotate": 0
+            },
+            {
+              "id": "shape_YsL2cpMW",
+              "type": "shape",
+              "left": 65,
+              "top": 195,
+              "width": 6,
+              "height": 210,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#4a90e2",
+              "fixedRatio": false,
+              "rotate": 0
+            },
+            {
+              "id": "text_GYLqUsMz",
+              "type": "text",
+              "left": 90,
+              "top": 175,
+              "width": 380,
+              "height": 262,
+              "content": "<p style=\"font-size: 20px; color: #4a90e2;\"><strong>Light Intensity</strong></p><p style=\"font-size: 18px; color: #333333;\">Drives the reaction speed until the process reaches a plateau.</p><p style=\"font-size: 20px; color: #4a90e2;\"><strong>CO2 Concentration</strong></p><p style=\"font-size: 18px; color: #333333;\">The essential carbon supply for building glucose molecules.</p><p style=\"font-size: 20px; color: #4a90e2;\"><strong>Temperature</strong></p><p style=\"font-size: 18px; color: #333333;\">Enzymes have an optimal range; extremes slow down the magic.</p>",
+              "defaultFontName": "Microsoft YaHei",
+              "defaultColor": "#333333",
+              "rotate": 0
+            },
+            {
+              "id": "image_I4fXATtH",
+              "type": "image",
+              "left": 510,
+              "top": 170,
+              "width": 430,
+              "height": 242,
+              "src": "gen_img_7im-MsND",
+              "fixedRatio": true,
+              "rotate": 0
+            },
+            {
+              "id": "text_Rws1qwdr",
+              "type": "text",
+              "left": 510,
+              "top": 420,
+              "width": 430,
+              "height": 46,
+              "content": "<p style=\"font-size: 16px; text-align: center; color: #666666;\">Rate vs. Light, CO2, and Temperature</p>",
+              "defaultFontName": "Microsoft YaHei",
+              "defaultColor": "#666666",
+              "rotate": 0
+            }
+          ],
+          "background": {
+            "type": "solid",
+            "color": "#ffffff"
+          }
+        }
+      },
+      "actions": [
+        {
+          "id": "action_malN7kI_",
+          "type": "spotlight",
+          "elementId": "text_FH3meskI"
+        },
+        {
+          "id": "action_pGhU9dd-",
+          "type": "speech",
+          "text": "Now that we've seen how glucose provides the building blocks for the plant, we have to ask: what determines how fast this biological factory actually runs? It's not always a constant speed.",
+          "audioRef": "audio/tts_action_pGhU9dd-.mp3"
+        },
+        {
+          "id": "action_P5_booFZ",
+          "type": "spotlight",
+          "elementId": "text_GYLqUsMz"
+        },
+        {
+          "id": "action_uiTyw17E",
+          "type": "speech",
+          "text": "First, consider light intensity. As we discussed when looking at the chloroplasts earlier, light is the primary energy source. Generally, more light means a higher rate of photosynthesis, but there is a limit.",
+          "audioRef": "audio/tts_action_uiTyw17E.mp3"
+        },
+        {
+          "id": "action_b2wo2GIF",
+          "type": "laser",
+          "elementId": "image_I4fXATtH"
+        },
+        {
+          "id": "action_-7hB3LME",
+          "type": "speech",
+          "text": "Look at the curve on this chart. The rate of photosynthesis increases as light gets stronger, but eventually, the line levels off. At this plateau, the plant is working as hard as it can, or perhaps it's being held back by a lack of CO2.",
+          "audioRef": "audio/tts_action_-7hB3LME.mp3"
+        },
+        {
+          "id": "action_7NAF3oPN",
+          "type": "spotlight",
+          "elementId": "text_Rws1qwdr"
+        },
+        {
+          "id": "action_FRwm55bO",
+          "type": "speech",
+          "text": "Carbon dioxide concentration and temperature are just as critical. Enzymes, the tiny workers facilitating these reactions, are very picky! If it's too cold, they move slowly; if it's too hot, they might break down entirely. Understanding these limits helps us see why certain plants thrive in specific environments while others struggle.",
+          "audioRef": "audio/tts_action_FRwm55bO.mp3"
+        }
+      ]
+    },
+    {
+      "type": "slide",
+      "title": "Summary: The Big Picture",
+      "order": 10,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "TF4p4Yg2_Tuh30IOL09l-",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "theme": {
+            "backgroundColor": "#ffffff",
+            "themeColors": [
+              "#5b9bd5",
+              "#ed7d31",
+              "#a5a5a5",
+              "#ffc000",
+              "#4472c4"
+            ],
+            "fontColor": "#333333",
+            "fontName": "Microsoft YaHei",
+            "outline": {
+              "color": "#d14424",
+              "width": 2,
+              "style": "solid"
+            },
+            "shadow": {
+              "h": 0,
+              "v": 0,
+              "blur": 10,
+              "color": "#000000"
+            }
+          },
+          "elements": [
+            {
+              "id": "text_yCYhrAzT",
+              "type": "text",
+              "left": 60,
+              "top": 50,
+              "width": 880,
+              "height": 76,
+              "content": "<p style=\"font-size: 36px; color: #1b5e20;\"><strong>Summary: The Big Picture</strong></p>",
+              "defaultFontName": "Microsoft YaHei",
+              "defaultColor": "#333333",
+              "rotate": 0
+            },
+            {
+              "id": "shape_WVWxRBj6",
+              "type": "shape",
+              "left": 70,
+              "top": 126,
+              "width": 860,
+              "height": 3,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#4caf50",
+              "fixedRatio": false,
+              "rotate": 0
+            },
+            {
+              "id": "shape_R0OJTLMy",
+              "type": "shape",
+              "left": 60,
+              "top": 155,
+              "width": 880,
+              "height": 130,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f1f8e9",
+              "fixedRatio": false,
+              "rotate": 0
+            },
+            {
+              "id": "text_DgOHO6Fj",
+              "type": "text",
+              "left": 80,
+              "top": 173,
+              "width": 840,
+              "height": 94,
+              "content": "<p style=\"font-size: 24px; text-align: center; line-height: 1.5;\">Life's Solar Power: Photosynthesis converts sunlight into the chemical energy that sustains nearly all life on Earth.</p>",
+              "defaultFontName": "Microsoft YaHei",
+              "defaultColor": "#2e7d32",
+              "rotate": 0
+            },
+            {
+              "id": "shape_XhKypaLk",
+              "type": "shape",
+              "left": 60,
+              "top": 305,
+              "width": 280,
+              "height": 200,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ffffff",
+              "fixedRatio": false,
+              "rotate": 0
+            },
+            {
+              "id": "shape_RzsCEqQS",
+              "type": "shape",
+              "left": 60,
+              "top": 305,
+              "width": 280,
+              "height": 5,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#81c784",
+              "fixedRatio": false,
+              "rotate": 0
+            },
+            {
+              "id": "text_dlkICYOk",
+              "type": "text",
+              "left": 70,
+              "top": 320,
+              "width": 260,
+              "height": 52,
+              "content": "<p style=\"font-size: 20px; color: #2e7d32;\"><strong>Two Main Stages</strong></p>",
+              "defaultFontName": "Microsoft YaHei",
+              "defaultColor": "#333333",
+              "rotate": 0
+            },
+            {
+              "id": "text_p0dkdT05",
+              "type": "text",
+              "left": 70,
+              "top": 375,
+              "width": 260,
+              "height": 94,
+              "content": "<p style=\"font-size: 16px;\">• Light-Dependent: Inside the Thylakoid</p><p style=\"font-size: 16px;\">• Calvin Cycle: Inside the Stroma</p>",
+              "defaultFontName": "Microsoft YaHei",
+              "defaultColor": "#555555",
+              "rotate": 0
+            },
+            {
+              "id": "shape_MEF_bHje",
+              "type": "shape",
+              "left": 360,
+              "top": 305,
+              "width": 280,
+              "height": 200,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ffffff",
+              "fixedRatio": false,
+              "rotate": 0
+            },
+            {
+              "id": "shape_kAYqavSr",
+              "type": "shape",
+              "left": 360,
+              "top": 305,
+              "width": 280,
+              "height": 5,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#4db6ac",
+              "fixedRatio": false,
+              "rotate": 0
+            },
+            {
+              "id": "text_xgLdhuC7",
+              "type": "text",
+              "left": 370,
+              "top": 320,
+              "width": 260,
+              "height": 52,
+              "content": "<p style=\"font-size: 20px; color: #00796b;\"><strong>Inputs &amp; Outputs</strong></p>",
+              "defaultFontName": "Microsoft YaHei",
+              "defaultColor": "#333333",
+              "rotate": 0
+            },
+            {
+              "id": "text_dfYwF2MH",
+              "type": "text",
+              "left": 370,
+              "top": 375,
+              "width": 260,
+              "height": 94,
+              "content": "<p style=\"font-size: 16px;\"><strong>In:</strong> Sunlight, Water, CO₂</p><p style=\"font-size: 16px;\"><strong>Out:</strong> Glucose (Energy) and Oxygen</p>",
+              "defaultFontName": "Microsoft YaHei",
+              "defaultColor": "#555555",
+              "rotate": 0
+            },
+            {
+              "id": "shape_fyTuBljI",
+              "type": "shape",
+              "left": 660,
+              "top": 305,
+              "width": 280,
+              "height": 200,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ffffff",
+              "fixedRatio": false,
+              "rotate": 0
+            },
+            {
+              "id": "shape_BamjJbAl",
+              "type": "shape",
+              "left": 660,
+              "top": 305,
+              "width": 280,
+              "height": 5,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ffb74d",
+              "fixedRatio": false,
+              "rotate": 0
+            },
+            {
+              "id": "text_tYp1TJ_p",
+              "type": "text",
+              "left": 670,
+              "top": 320,
+              "width": 260,
+              "height": 52,
+              "content": "<p style=\"font-size: 20px; color: #e65100;\"><strong>Global Impact</strong></p>",
+              "defaultFontName": "Microsoft YaHei",
+              "defaultColor": "#333333",
+              "rotate": 0
+            },
+            {
+              "id": "text_rtN0YLzx",
+              "type": "text",
+              "left": 670,
+              "top": 375,
+              "width": 260,
+              "height": 118,
+              "content": "<p style=\"font-size: 16px;\">Without this cycle, our atmosphere would lack oxygen and the food chain would collapse.</p>",
+              "defaultFontName": "Microsoft YaHei",
+              "defaultColor": "#555555",
+              "rotate": 0
+            }
+          ],
+          "background": {
+            "type": "solid",
+            "color": "#ffffff"
+          }
+        }
+      },
+      "actions": [
+        {
+          "id": "action__NXftIb0",
+          "type": "spotlight",
+          "elementId": "text_yCYhrAzT"
+        },
+        {
+          "id": "action_I1ccIE1J",
+          "type": "speech",
+          "text": "Now that we've explored the specific factors that can speed up or slow down this process, let's step back and look at the big picture. Photosynthesis isn't just a chemical equation; it's the bridge that connects the sun's massive energy to every living organism on our planet.",
+          "audioRef": "audio/tts_action_I1ccIE1J.mp3"
+        },
+        {
+          "id": "action_PLaRmFHi",
+          "type": "laser",
+          "elementId": "text_dfYwF2MH"
+        },
+        {
+          "id": "action_KLlyuMEA",
+          "type": "speech",
+          "text": "Think back to our factory analogy. The raw ingredients—sunlight, water, and carbon dioxide—enter the system, and the plant works its magic to produce glucose for food and oxygen as a vital gift to the atmosphere. Felix, I'm sure you've got these inputs and outputs perfectly charted in your notes by now!",
+          "audioRef": "audio/tts_action_KLlyuMEA.mp3"
+        },
+        {
+          "id": "action_iimbGt8z",
+          "type": "spotlight",
+          "elementId": "text_p0dkdT05"
+        },
+        {
+          "id": "action_n5Gv6iA2",
+          "type": "speech",
+          "text": "We've mastered the two stages of this operation: the Light-Dependent reactions in the thylakoid, where solar energy is first captured, and the Calvin Cycle in the stroma, where that energy is used to build the sugar molecules that sustain the plant.",
+          "audioRef": "audio/tts_action_n5Gv6iA2.mp3"
+        },
+        {
+          "id": "action_AUuoCcg4",
+          "type": "spotlight",
+          "elementId": "text_rtN0YLzx"
+        },
+        {
+          "id": "action_YFNK9clm",
+          "type": "speech",
+          "text": "Finally, we must remember the global impact. This process is the very reason we have an oxygen-rich atmosphere. Without this cycle continuously recycling carbon and releasing oxygen, life as we know it simply couldn't exist. It is the foundation of the Earth's entire ecosystem.",
+          "audioRef": "audio/tts_action_YFNK9clm.mp3"
+        },
+        {
+          "id": "action_SkjFnIqd",
+          "type": "discussion",
+          "topic": "The vulnerability of the global energy bridge",
+          "prompt": "Maya, since you're always thinking about real-world impacts, what do you think would happen to the global food chain if a massive event, like a volcanic eruption, blocked out a significant portion of sunlight for several years?",
+          "agentId": "gen-F5Os52Il"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "title": "Final Knowledge Mastery",
+      "order": 11,
+      "content": {
+        "type": "quiz",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "single",
+            "question": "During the light-independent reactions, also known as the Calvin cycle, which of the following accurately describes the role of the products derived from the light-dependent reactions?",
+            "options": [
+              {
+                "value": "A",
+                "label": "ATP and NADPH are used to reduce 3-phosphoglycerate (PGA) into G3P"
+              },
+              {
+                "value": "B",
+                "label": "Oxygen is used to oxidize water molecules within the stroma"
+              },
+              {
+                "value": "C",
+                "label": "Carbon dioxide is split using ATP to release high-energy electrons"
+              },
+              {
+                "value": "D",
+                "label": "NADPH is used to generate a proton gradient across the thylakoid membrane"
+              }
+            ],
+            "answer": [
+              "A"
+            ],
+            "analysis": "In the Calvin cycle, the ATP and NADPH produced during the light-dependent reactions are essential for the reduction phase, where 3-PGA is converted into the sugar G3P. Oxygen is a byproduct of the light reactions (not a reactant here), and CO2 is fixed into organic molecules rather than being split for energy.",
+            "points": 15,
+            "hasAnswer": true
+          },
+          {
+            "id": "q2",
+            "type": "multiple",
+            "question": "Which of the following environmental factors can act as a direct limiting factor to the rate of photosynthesis in a terrestrial plant? (Select all that apply)",
+            "options": [
+              {
+                "value": "A",
+                "label": "Intensity of light"
+              },
+              {
+                "value": "B",
+                "label": "Concentration of atmospheric carbon dioxide"
+              },
+              {
+                "value": "C",
+                "label": "Ambient temperature"
+              },
+              {
+                "value": "D",
+                "label": "Availability of soil oxygen"
+              }
+            ],
+            "answer": [
+              "A",
+              "B",
+              "C"
+            ],
+            "analysis": "Light intensity directly affects the rate of photolysis in the light-dependent stage. Carbon dioxide concentration is a substrate for the Calvin cycle. Temperature affects the kinetic energy and efficiency of enzymes like RuBisCO. Soil oxygen is required for root respiration but is not a direct reactant or limiting factor for the photosynthetic process itself.",
+            "points": 20,
+            "hasAnswer": true
+          },
+          {
+            "id": "q3",
+            "type": "single",
+            "question": "In a controlled experiment using heavy oxygen (the isotope Oxygen-18), scientists provided a plant with water containing Oxygen-18 and normal carbon dioxide. Where would the Oxygen-18 be detected after the plant completes the process of photosynthesis?",
+            "options": [
+              {
+                "value": "A",
+                "label": "In the glucose molecules produced"
+              },
+              {
+                "value": "B",
+                "label": "In the oxygen gas released into the atmosphere"
+              },
+              {
+                "value": "C",
+                "label": "In the RuBisCO enzymes within the chloroplast"
+              },
+              {
+                "value": "D",
+                "label": "In the water molecules generated during the Calvin cycle"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "The process of photolysis—the splitting of water molecules—occurs during the light-dependent reactions to provide electrons for the transport chain. This reaction releases oxygen gas as a byproduct. Therefore, the oxygen atoms from the water end up in the released O2 gas, while the oxygen atoms in glucose come from the CO2.",
+            "points": 20,
+            "hasAnswer": true
+          },
+          {
+            "id": "q4",
+            "type": "multiple",
+            "question": "Under extreme heat and drought, plants often close their stomata (microscopic leaf pores) to conserve water. What are the immediate biochemical consequences of this adaptation on the photosynthetic process? (Select all that apply)",
+            "options": [
+              {
+                "value": "A",
+                "label": "A decrease in the internal concentration of carbon dioxide"
+              },
+              {
+                "value": "B",
+                "label": "An increase in the internal concentration of oxygen gas"
+              },
+              {
+                "value": "C",
+                "label": "An increase in the efficiency of the Calvin cycle"
+              },
+              {
+                "value": "D",
+                "label": "The initiation of photorespiration as RuBisCO binds with oxygen"
+              }
+            ],
+            "answer": [
+              "A",
+              "B",
+              "D"
+            ],
+            "analysis": "Closing stomata prevents water loss but also blocks gas exchange. CO2 levels drop as it is consumed, and O2 levels rise as it is produced by light reactions but cannot escape. This high O2/low CO2 ratio causes the enzyme RuBisCO to bind with oxygen instead of carbon dioxide, leading to a wasteful process called photorespiration.",
+            "points": 20,
+            "hasAnswer": true
+          },
+          {
+            "id": "q5",
+            "type": "short_answer",
+            "question": "Even when a plant is provided with an unlimited increase in light intensity, the rate of photosynthesis eventually reaches a plateau and stops increasing. Explain why this happens, identifying the specific constraints within the chloroplast's biochemical machinery.",
+            "commentPrompt": "Detailed grading rubric: (1) Concept of limiting factors - 30% (2) Enzyme saturation (specifically RuBisCO) - 30% (3) Discussion of the bottleneck between light-dependent and independent stages or CO2 availability - 40%",
+            "analysis": "The rate plateaus because photosynthesis is a multi-step process. Once the light-dependent reactions are operating at maximum capacity, the system becomes limited by other factors. This is often due to the saturation of enzymes like RuBisCO in the Calvin cycle or a limited supply of CO2. Essentially, the 'factory' can only process the 'energy' provided by the light as fast as its 'machinery' (enzymes) and 'raw materials' (CO2) allow.",
+            "points": 25,
+            "hasAnswer": false
+          }
+        ]
+      },
+      "actions": [
+        {
+          "id": "action_X4C1QeKm",
+          "type": "speech",
+          "text": "Since photosynthesis is the foundation of our entire ecosystem, as we just discussed, it's vital that we truly master how these biological gears turn together. This 'Final Knowledge Mastery' is our grand finale—a comprehensive look at everything from the thylakoid membranes to the carbon-fixing machinery of the stroma.",
+          "audioRef": "audio/tts_action_X4C1QeKm.mp3"
+        },
+        {
+          "id": "action_86ubz7Ev",
+          "type": "speech",
+          "text": "In this set, you'll be revisited by the Calvin Cycle, which we broke down on page 7. Keep a close eye on the chemical transformations; remember our earlier look at heavy oxygen isotopes? It’s a common trap to think the oxygen we breathe comes from carbon dioxide, but your knowledge of photolysis tells a different story.",
+          "audioRef": "audio/tts_action_86ubz7Ev.mp3"
+        },
+        {
+          "id": "action_HXkw8Hye",
+          "type": "speech",
+          "text": "We are also testing your understanding of how a plant handles 'stress,' like extreme heat or limited CO2. As Sophie mentioned when we looked at the factory's raw ingredients, the rate of production isn't just about how much light you throw at a leaf—the enzymes have their own speed limits. Felix, I'm sure your notes on RuBisCO will come in handy for the short answer section!",
+          "audioRef": "audio/tts_action_HXkw8Hye.mp3"
+        },
+        {
+          "id": "action_iP7jjDIK",
+          "type": "speech",
+          "text": "Take a moment to carefully work through these five questions. Once you finish, we will have completed our journey through the microscopic world of the chloroplast. Good luck!",
+          "audioRef": "audio/tts_action_iP7jjDIK.mp3"
+        },
+        {
+          "id": "action_GBeRvbYN",
+          "type": "speech",
+          "text": "Fantastic effort today, everyone! We've traveled from the sun's rays to the molecular bonds of glucose. You now understand how plants literally build themselves out of thin air and light. Every green leaf you see outside is a tiny, bustling factory sustaining life on Earth. I hope you carry this new perspective with you. Class dismissed!",
+          "audioRef": "audio/tts_action_GBeRvbYN.mp3"
+        },
+        {
+          "id": "action_FkdI2IQ5",
+          "type": "discussion",
+          "topic": "Reflecting on the 'Photosynthesis Factory'",
+          "prompt": "Of all the steps we've covered today—from capturing light to building sugar—which part of the process do you find most incredible or surprising?",
+          "agentId": "gen-F5Os52Il"
+        }
+      ]
+    }
+  ],
+  "mediaIndex": {
+    "audio/tts_action_1ENpuSu8.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_mDTcD0cG.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_pNV6DNqU.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_uBYeg9Gq.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_fE_Hn1PA.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_w1juum-r.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_w1r99qhm.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_fnIzshcd.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_ZqKapM1w.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_4nRvSdW8.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_DbJEw7Oj.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_PQhQWCW3.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_F29URfdY.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_YITWBGRp.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_CNqvEUkH.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_zTxYk2KV.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_dF4GfIfQ.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_Mvc6BDKu.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_rsUqp1w7.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_IhIu45dM.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_YlArqLtq.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_q_J4NrIh.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_LlB-erbk.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_UsXXKYax.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_VQFPnfRr.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_dlCynX7Z.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_jZ6qus0a.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_DkVVnc34.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_uHYbut5r.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_XWivqPHp.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_zltq3kGD.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_2ZK0KnWv.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_WJ60MNcL.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_fvo5jHxx.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_FpyzEkdh.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_SK8anGY6.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_jSol6dod.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_MQ6nIFDs.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_pGhU9dd-.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_uiTyw17E.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_-7hB3LME.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_FRwm55bO.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_I1ccIE1J.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_KLlyuMEA.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_n5Gv6iA2.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_YFNK9clm.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_X4C1QeKm.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_86ubz7Ev.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_HXkw8Hye.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_iP7jjDIK.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "audio/tts_action_GBeRvbYN.mp3": {
+      "type": "audio",
+      "format": "mp3"
+    },
+    "media/gen_img_7im-MsND.png": {
+      "type": "generated",
+      "mimeType": "image/png",
+      "size": 0,
+      "prompt": "Three simple line graphs showing the relationship between photosynthesis rate and Light, CO2, and Temperature respectively. All axes labeled in English."
+    },
+    "media/gen_img_8OZfg1E_.png": {
+      "type": "generated",
+      "mimeType": "image/png",
+      "size": 0,
+      "prompt": "A simplified diagram of the Calvin Cycle showing CO2 entering a loop and Glucose exiting, with labels for ATP and NADPH providing energy. Clear, educational infographic style."
+    },
+    "media/gen_img_KihYjHNE.png": {
+      "type": "generated",
+      "mimeType": "image/png",
+      "size": 0,
+      "prompt": "An anatomical diagram of a plant showing roots in soil with blue arrows for water, sunlight hitting leaves, and gray arrows for CO2 entering the leaf surface. All labels in English."
+    },
+    "media/gen_img_VhwWN1QO.png": {
+      "type": "generated",
+      "mimeType": "image/png",
+      "size": 0,
+      "prompt": "A beautiful, bright green forest with sunbeams streaming through the leaves, with a simple overlay of the photosynthesis chemical equation in white text."
+    },
+    "media/gen_img_ZJkfG4iK.png": {
+      "type": "generated",
+      "mimeType": "image/png",
+      "size": 0,
+      "prompt": "A 3D cross-section illustration of a plant cell chloroplast, highlighting the green thylakoid stacks and the surrounding stroma. Realistic biological style."
+    },
+    "media/gen_img_oNGXKjVk.png": {
+      "type": "generated",
+      "mimeType": "image/png",
+      "size": 0,
+      "prompt": "A montage showing a growing seedling, a starchy potato underground, and a thick tree trunk, representing different uses of glucose."
+    },
+    "media/gen_vid_ip_oqZov.mp4": {
+      "type": "generated",
+      "mimeType": "video/mp4",
+      "size": 0,
+      "prompt": "An animation showing photons of light hitting the thylakoid membrane, water molecules splitting into oxygen and hydrogen ions, and energy-carrying molecules being charged up."
+    }
+  }
+}
