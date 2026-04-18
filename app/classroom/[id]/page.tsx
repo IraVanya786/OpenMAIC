@@ -36,34 +36,24 @@ export default function ClassroomDetailPage() {
     try {
       await loadFromStorage(classroomId);
 
-      // If IndexedDB had no data, try server-side storage (API-generated classrooms)
+      // LOAD YOUR STATIC LESSON INSTEAD OF THE API
       if (!useStageStore.getState().stage) {
-        log.info('No IndexedDB data, trying server-side storage for:', classroomId);
+        log.info('Loading static lesson from public/lesson1.json');
         try {
-          const res = await fetch(`/api/classroom?id=${encodeURIComponent(classroomId)}`);
-          if (res.ok) {
-            const json = await res.json();
-            if (json.success && json.classroom) {
-              const { stage, scenes } = json.classroom;
-              useStageStore.getState().setStage(stage);
-              useStageStore.setState({
-                scenes,
-                currentSceneId: scenes[0]?.id ?? null,
-              });
-              log.info('Loaded from server-side storage:', classroomId);
-
-              // Hydrate server-generated agents into IndexedDB + registry.
-              // Don't set selectedAgentIds here — the general agent
-              // restoration logic below (Path 2) handles it uniformly.
-              if (stage.generatedAgentConfigs?.length) {
-                const { saveGeneratedAgents } = await import('@/lib/orchestration/registry/store');
-                await saveGeneratedAgents(stage.id, stage.generatedAgentConfigs);
-                log.info('Hydrated server-generated agents for stage:', stage.id);
-              }
-            }
-          }
+          // Fetch the JSON you extracted from your .maic file
+          const res = await fetch('/lesson1.json'); 
+          const data = await res.json();
+          
+          // These lines update the internal 'Memory' (Zustand) of the classroom
+          useStageStore.getState().setStage(data.stage);
+          useStageStore.setState({
+            scenes: data.scenes,
+            currentSceneId: data.scenes[0]?.id ?? null,
+          });
+          
+          log.info('Successfully loaded lesson1.json');
         } catch (fetchErr) {
-          log.warn('Server-side storage fetch failed:', fetchErr);
+          log.error('Failed to load lesson1.json. Make sure it is in the /public folder!', fetchErr);
         }
       }
 
