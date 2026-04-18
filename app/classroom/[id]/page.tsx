@@ -48,13 +48,17 @@ export default function ClassroomDetailPage() {
           useStageStore.getState().setStage(data.stage);
           useStageStore.setState({
             scenes: data.scenes,
-            // We explicitly set the first scene ID to trigger the render
             currentSceneId: data.scenes[0]?.id || data.scenes[0]?.content?.canvas?.id,
-            // CRITICAL: This removes the "Loading..." overlay
-            status: 'success', 
-            // Ensure agents are loaded so they can "speak" the actions
-            agents: data.agents || []
+            agents: data.agents || [],
+            // Try one of these common OpenMAIC property names instead of 'status':
+            isGenerated: true, 
           });
+          
+          // If the loading spinner is still there, try calling the explicit setter
+          // (Check if your store has a setGenerated or setStatus function)
+          if ((useStageStore.getState() as any).setGenerated) {
+             (useStageStore.getState() as any).setGenerated(true);
+          }
           
           log.info('Successfully loaded lesson1.json');
         } catch (fetchErr) {
